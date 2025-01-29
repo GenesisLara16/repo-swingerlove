@@ -71,8 +71,8 @@ body {
 
 /*-------------mainprincipalhome-------------*/
 .maincontent {
-   max-width: 1200px;
-   margin: 0px auto;
+    max-width: 1200px;
+    margin: 0px auto;
 }
 
 .principal img {
@@ -416,9 +416,9 @@ h3 {
 }
 
 .form{
-   max-width: 500px;
-   margin: 0 auto;
-   padding: 0 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .form-control{
@@ -456,25 +456,27 @@ h3 {
 
 /*------------End footer---------*/
 
+/*----media querie-------*/
+
 @media (max-width: 768px) {
-    /* Cambiar el diseño del menú a columna */
+    
     .nav-menu {
         flex-direction: column;
         gap: 10px;
     }
 
-    /* Ajustar imágenes principales */
+    
     .principal img {
         max-height: 300px;
     }
 
-    /* Reorganizar contenedores */
+    
     .container {
         flex-direction: column;
         max-width: 100%;
     }
 
-    .text-container1, .section-item {
+    .text-container1 {
         max-width: 100%;
     }
 
@@ -484,14 +486,69 @@ h3 {
         width: 100%;
     }
 
+    .section-item {
+        width: 100%;
+    }
+
     .secondary img {
         max-width: 100%;
         padding-left: 0px;
     }
+
+    /*-----media queries destinations------*/
+        .maindestinations h1{
+            margin-inline: 1%;
+        }
+
+        .maindestinations p {
+            text-align: justify;
+            margin: 6px;
+        }
+
+        .destinations-container {
+            display: block;
+            text-align: center;
+        }
+
+        .destinations-card img {
+            margin-right: 60px;
+        }
+
+        .destinations-card p{
+            margin-left: 20px;
+            margin-right: 80px;
+            padding-top: 10px;
+        }
+
+        .destinations-card h2 {
+            margin-right: 10%;
+            margin-top: 15px;
+            margin-left: 0%;
+        }
 }
 
+        /*-----media queries footer-----*/
+
+    .footer-principal {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .footer-container p {
+        margin-bottom: 15px;
+    }
+
+    .redes-logo {
+        justify-content: center; 
+        padding-bottom: 15px;
+    }
+
+    .redes-logo i {
+        font-size: 20px; 
+    }
+
 @media (max-width: 480px) {
-    /* Cambiar tamaño de fuente para pantallas muy pequeñas */
+    
     .nav-menu a {
         font-size: 12px;
     }
@@ -507,5 +564,16 @@ h3 {
 
     .secondary img {
         max-width: 100%;
+    }
+
+    /*--------media queries destinations----*/
+        .destinations-card h2{
+        margin-right: 17%;
+        margin-top: 15px;
+        margin-left: 1%;
+    }
+
+    .destinations-card p {
+        margin-block: 10px;
     }
 }
